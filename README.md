@@ -1,4 +1,4 @@
-#Deep Learning with Amazon SageMaker Studio
+# Deep Learning with Amazon SageMaker Studio
 
 
 In this workshop, you’ll learn how to use Amazon SageMaker to build, train and tune deep learning models using built-in algorithms as well as custom Tensorflow code. 
@@ -21,7 +21,7 @@ dataset consists of 60000 32x32 color images, split into 40000 images for traini
 and 10000 images for testing.
 
 
-#Before you begin
+## Before you begin
 Before you begin this tutorial, you must have an AWS account. If you do not already have an account, follow the 
 
 
