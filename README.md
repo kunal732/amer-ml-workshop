@@ -135,8 +135,8 @@ ic = sagemaker.estimator.Estimator(training_image,
 Apart from the above set of parameters, there are hyperparameters that are specific to the algorithm. These are:
 - **num_layers**: The number of layers (depth) for the network. We use 18 in this samples but other values such as 50, 152 can be used.
 - **image_shape**: The input image dimensions,'num_channels, height, width', for the network. It should be no larger than the actual image size. The number of channels should be same as the actual image.
-- **num_classes**: This is the number of output classes for the new dataset. Imagenet was trained with 1000 output classes but the number of output classes can be changed for fine-tuning. For caltech, we use 257 because it has 256 object categories + 1 clutter class.
-- **num_training_samples**: This is the total number of training samples. It is set to 15240 for caltech dataset with the current split.
+- **num_classes**: This is the number of output classes for the CIFAR-10 dataset. We set this value to 10 since there are 10 classes.  
+- **num_training_samples**: This is the total number of training samples.
 - **mini_batch_size**: The number of training samples used for each mini batch. In distributed training, the number of training samples used per batch will be N * mini_batch_size where N is the number of hosts on which training is run.
 - **epochs**: Number of training epochs.
 - **learning_rate**: Learning rate for training.
