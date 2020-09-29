@@ -30,7 +30,8 @@ Before you begin this tutorial, you must have an AWS account. If you do not alre
 Follow instructions for setting a notebook in SageMaker Studio
 
 ## Step 2 - Setting up Permissions and environment variables
-In this step we setup some prequisites so our notebook can authenticate and link to other AWS Services. There are 3 parts to this: 
+In this step we setup some prequisites so our notebook can authenticate and link to other AWS Services. 
+#### There are 3 parts to this: 
 - Define the S3 bucket that you want to use for training and model data.
 - Create a role for permissions
 - Specify the built-in algorithm that you want to use. 
@@ -57,7 +58,9 @@ print (training_image)
 ```
 
 ## Step 3 Download the dataset and upload it to Amazon S3
-In this step we'll be downloading the CIFAR-10 training dataset and upload that to Amazon S3. As mentioned above this dataset consists of 10 classes with 40,000 images for training, 10,000 for validation and another 10,000 for testing. We can download all of these images from https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz and then convert them into to the recommended input format for image classification which is Apache MXNet RecordIO. We can also just download the CIFAR-10 dataset already in the RecordIO, which is what we'll be doing for this workshop.
+In this step we'll be downloading the CIFAR-10 training dataset and upload that to Amazon S3. As mentioned above this dataset consists of 10 classes with 40,000 images for training, 10,000 for validation and another 10,000 for testing. We can download all of these images from https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz and then convert them into to the recommended input format for image classification which is Apache MXNet RecordIO. 
+
+We can also just download the CIFAR-10 dataset already in the RecordIO, which is what we'll be doing for this workshop.
 
  
 
