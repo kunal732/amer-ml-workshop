@@ -1,7 +1,8 @@
 # Deep Learning with Amazon SageMaker Studio
 
-
 In this workshop, you’ll learn how to use Amazon SageMaker to build, train and tune deep learning models using built-in algorithms as well as custom Tensorflow code. 
+
+![SageMakerImage](https://sagemaker-workshop.com/images/sm-overview.png)
 
 Amazon SageMaker is a fully managed service that provides machine learning (ML) developers and data scientists with the ability to build, train, and deploy ML models quickly. SageMaker provides you with everything you need to train and tune models at scale without the need to manage infrastructure. You can use Amazon SageMaker Studio, the first integrated development environment (IDE) for machine learning, to quickly visualize experiments and track training progress without ever leaving the familiar Jupyter Notebook interface. Within SageMaker Studio, you can use SageMaker Experiments to track, evaluate, and organize
 experiments easily.
