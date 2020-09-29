@@ -26,8 +26,17 @@ and 10000 images for testing.
 ## Before you begin
 Before you begin this tutorial, you must have an AWS account. If you do not already have an account, follow the instructions for eventengine. 
 
-## Step 1
-Follow instructions for setting a notebook in SageMaker Studio
+## Step 1 - Launch SageMaker Studio Notebook
+Follow instructions for setting up a notebook in SageMaker Studio
+
+####A. Go to File-> New Launcher
+![newlauncherImg](https://aiml-data.s3.amazonaws.com/workshop/new-launcher.png)
+
+####B. Select MXNET Optimized for GPU
+![optimizedGPUImg](https://aiml-data.s3.amazonaws.com/workshop/Choose-mxnet.png)
+
+####C. Select Python 3
+![python3Img](https://aiml-data.s3.amazonaws.com/workshop/select-python3.png)
 
 ## Step 2 - Setting up Permissions and environment variables
 In this step we setup some prequisites so our notebook can authenticate and link to other AWS Services. 
@@ -56,6 +65,8 @@ from sagemaker.amazon.amazon_estimator import get_image_uri
 training_image = get_image_uri(sess.boto_region_name, 'image-classification', repo_version="latest")
 print (training_image)
 ```
+
+
 
 ## Step 3 Download the dataset and upload it to Amazon S3
 In this step we'll be downloading the CIFAR-10 training dataset and upload that to Amazon S3. As mentioned above this dataset consists of 10 classes with 40,000 images for training, 10,000 for validation and another 10,000 for testing. We can download all of these images from https://www.cs.toronto.edu/~kriz/cifar-10-python.tar.gz and then convert them into to the recommended input format for image classification which is Apache MXNet RecordIO. 
