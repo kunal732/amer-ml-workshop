@@ -8,7 +8,7 @@ Amazon SageMaker is a fully managed service that provides machine learning (ML) 
 experiments easily.
 
 
-In this workshop, you’ll go through the following steps:
+### In this workshop, you’ll go through the following steps:
 1. Set up Amazon SageMaker Studio to build and train your deep learning models. 
 2. Download a public dataset using Amazon SageMaker Studio Notebook and upload it to Amazon S3.
 3. Create an Amazon SageMaker Experiment to track and manage training jobs
