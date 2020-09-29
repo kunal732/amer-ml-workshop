@@ -29,13 +29,13 @@ Before you begin this tutorial, you must have an AWS account. If you do not alre
 ## Step 1 - Launch SageMaker Studio Notebook
 Follow instructions for setting up a notebook in SageMaker Studio
 
-####A. Go to File-> New Launcher
+#### A. Go to File-> New Launcher
 ![newlauncherImg](https://aiml-data.s3.amazonaws.com/workshop/new-launcher.png)
 
-####B. Select MXNET Optimized for GPU
+#### B. Select MXNET Optimized for GPU
 ![optimizedGPUImg](https://aiml-data.s3.amazonaws.com/workshop/Choose-mxnet.png)
 
-####C. Select Python 3
+#### C. Select Python 3
 ![python3Img](https://aiml-data.s3.amazonaws.com/workshop/select-python3.png)
 
 ## Step 2 - Setting up Permissions and environment variables
